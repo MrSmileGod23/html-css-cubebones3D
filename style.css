@@ -1,0 +1,111 @@
+*,*:before,*:after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root{
+  --main:linear-gradient(#151515,#219421);
+  --shadow:RGB(17, 13, 21);
+}
+body{
+  font: normal 100%/1.5 "Karla", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url(./img/23.gif);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.cube{
+  display: flex;
+  font-size: 42px;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  width: 500px;
+  height: 500px;
+  transform-style: preserve-3d;
+  transform: rotateX(30deg);
+  animation: animate 35s linear infinite;
+}
+@keyframes animate{
+  0%{
+    transform: rotateX(-30deg) rotateY(0deg);
+  }
+  100%{
+    transform: rotateX(-30deg) rotateY(360deg);
+  }
+}
+.cube div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+}
+
+.cube div span{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  transform: rotateY(calc(90deg * var(--i)))
+   translateZ(250px);
+}
+#p0{
+  background-image: url(./img/3.png);
+}
+#p0:hover{
+  background-image: url(./img/blast.gif);
+}
+#p1{
+  background-image: url(./img/2.png);
+}
+#p2{
+  background-image: url(./img/1.png);
+}
+#p3{
+  background-image: url(./img/4.png);
+}
+.top{
+  background-image: url(./img/logo.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 300px;
+  transform: rotateX(90deg) translateZ(250px);
+}
+.bottom{
+  background-image: url(./img/logo.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 300px;
+  transform: rotateX(90deg) translateZ(-250px);
+}
