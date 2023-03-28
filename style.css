@@ -13,7 +13,7 @@ body{
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background-image: url(./img/23.gif);
+
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -31,14 +31,14 @@ body{
   height: 500px;
   transform-style: preserve-3d;
   transform: rotateX(30deg);
-  animation: animate 35s linear infinite;
+  animation: animate 15s linear infinite;
 }
 @keyframes animate{
   0%{
-    transform: rotateX(-30deg) rotateY(0deg);
+    transform: rotateX(-20deg) rotateY(0deg);
   }
   100%{
-    transform: rotateX(-30deg) rotateY(360deg);
+    transform: rotateX(-20deg) rotateY(360deg);
   }
 }
 .cube div{
@@ -64,6 +64,7 @@ body{
   left: 0;
   width: 100%;
   height: 100%;
+  border: 5px solid black;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -71,19 +72,28 @@ body{
    translateZ(250px);
 }
 #p0{
-  background-image: url(./img/3.png);
+  background-image: url(./img/blast.png);
 }
 #p0:hover{
   background-image: url(./img/blast.gif);
 }
 #p1{
-  background-image: url(./img/2.png);
+  background-image: url(./img/TimTheToolmanTaylor.png);
+}
+#p1:hover{
+  background-image: url(./img/TimTheToolmanTaylor.gif);
 }
 #p2{
-  background-image: url(./img/1.png);
+  background-image: url(./img/WhiteBoyRick.png);
+}
+#p2:hover{
+  background-image: url(./img/WhiteBoyRick.gif);
 }
 #p3{
-  background-image: url(./img/4.png);
+  background-image: url(./img/paidprogramming2.png);
+}
+#p3:hover{
+  background-image: url(./img/paidprogramming2.gif);
 }
 .top{
   background-image: url(./img/logo.png);
